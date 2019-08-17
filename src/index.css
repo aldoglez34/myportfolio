@@ -1,13 +1,148 @@
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* body {
+    background-image: url("../images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+} */
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: gainsboro;
+  background-image: url("images/bg.jpeg");
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+/* ! main container */
+
+.cover-container {
+  max-width: 42em;
+}
+
+/* ! custom default button */
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none;
+  /* prevent inheritance from body */
+  background-color: #fff;
+  border: 0.05rem solid #fff;
+}
+
+/* ! divider */
+
+.divider {
+  margin-top: 10px;
+  background-color: gainsboro;
+  opacity: 0.3;
+}
+
+/* ! cover */
+
+.cover {
+  /* padding: 0 1.5rem; */
+  padding-bottom: 1.5rem;
+}
+
+.cover .btn-lg {
+  padding: 0.75rem 1.25rem;
+  font-weight: 700;
+}
+
+/* ! footer (on index.html only) */
+
+.mastfoot {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ! links */
+
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ! header */
+
+.masthead {
+  /* margin-bottom: 1em; */
+  padding-bottom: 0.5em;
+}
+
+.nav-masthead .nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* ! logo */
+
+.masthead-brand {
+  margin-bottom: 0;
+  font-family: "Dancing Script", cursive;
+}
+
+/* ! media queries for smaller screens */
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* change bakcground */
+  /* body {
+        background-image: url("../images/bg-small.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    } */
+  body {
+    background-image: url("images/bg-small.jpg");
+    background-color: gray;
+    background-blend-mode: multiply;
+  }
+  .about-img {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+  /* make smaller fonts */
+  .lead {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 25px;
+  }
 }

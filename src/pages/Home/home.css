@@ -1,0 +1,67 @@
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid white;
+  margin: 5px 10px 10px 10px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#button-index {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-index a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+#button-index:hover #circle {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+#button-index:hover a {
+  color: #2d3142;
+}
+
+.lang {
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+}
+
+.lang .lang:hover,
+.lang:focus {
+  text-decoration: none;
+}
+
+.activelang {
+  color: #fff;
+}
