@@ -83,8 +83,8 @@ class Home extends Component {
 
                         <footer className="mastfoot mt-auto mb-3">
                             <div className="d-flex flex-row justify-content-center">
-                                <Button variant="link" className="lang activelang mr-4" onClick={() => this.handleLanguage("eng")}>Inglés</Button>
-                                <Button variant="link" className="lang ml-4" name="toSpa" onClick={() => this.handleLanguage("spa")}>Español</Button>
+                                <Button variant="link" className="lang mr-4" onClick={() => this.handleLanguage("eng")}>Inglés</Button>
+                                <Button variant="link" className="lang activelang ml-4" name="toSpa" onClick={() => this.handleLanguage("spa")}>Español</Button>
                             </div>
                         </footer>
                     </div>
