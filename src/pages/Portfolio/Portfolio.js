@@ -122,7 +122,7 @@ const Portfolio = (props) => {
                                 />
                                 <Media.Body>
                                     <h5><b>Beer Hunters<span className="badge badge-pill badge-light ml-2">jQuery</span></b></h5>
-                                    <p className="mb-0">Find beers around you.</p>
+                                    <p className="mb-0">Find beers around you</p>
                                     <p>
                                         <a className="text-warning" href="https://github.com/aldoglez34/beer_hunters"
                                             target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -223,7 +223,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Giftastic<span className="badge badge-pill badge-light ml-2">jQuery</span></b></h5>
-                                        <p className="mb-0">Gifs about your favorite movies</p>
+                                        <p className="mb-0">Gifs sobre tus películas favoritas</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/giftastic"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -243,7 +243,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Rock-Papers-Scissors<span className="badge badge-pill badge-light ml-2">Firebase</span></b></h5>
-                                        <p className="mb-0">Online rock-papers-scissors game to play with your friends</p>
+                                        <p className="mb-0">Juego en línea de piedra, papel o tijeras</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/rock-paper-scissors"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -264,7 +264,7 @@ const Portfolio = (props) => {
                                     <Media.Body>
                                         <h5><b>Street Watcher
                                 <span className="badge badge-pill badge-light ml-2">MySQL</span></b></h5>
-                                        <p className="mb-0">Web App that helps you report non-emergency traffic violations</p>
+                                        <p className="mb-0">Aplicación web que te ayuda a reportar violaciones de tránsito</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/third-eye"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -285,7 +285,7 @@ const Portfolio = (props) => {
                                     <Media.Body>
                                         <h5><b>Complemento Natural
                                 <span className="badge badge-pill badge-light ml-2">React</span></b></h5>
-                                        <p className="mb-0">E-commerce <small className="text-muted">(under construction)</small></p>
+                                        <p className="mb-0">Comercio electrónico <small className="text-muted">(bajo construcción)</small></p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/complemento"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -302,7 +302,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Beer Hunters<span className="badge badge-pill badge-light ml-2">jQuery</span></b></h5>
-                                        <p className="mb-0">Find beers around you.</p>
+                                        <p className="mb-0">Encuentra cervezas cerca de tu locación</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/beer_hunters"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -322,7 +322,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Guess the Word<span className="badge badge-pill badge-light ml-2">jQuery</span></b></h5>
-                                        <p className="mb-0">Challenge your word knowledge with this game</p>
+                                        <p className="mb-0">Desafía tus conocimientos de palabras con este juego</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/wordguessgame"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -342,7 +342,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Trivia<span className="badge badge-pill badge-light ml-2">jQuery</span></b></h5>
-                                        <p className="mb-0">'90s theme trivia with a time limit</p>
+                                        <p className="mb-0">Trivia con tema de los '90s</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/triviagame"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -362,7 +362,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>Liri Bot<span className="badge badge-pill badge-light ml-2">Node</span></b></h5>
-                                        <p className="mb-0">Backend app to find movies, songs and concert dates</p>
+                                        <p className="mb-0">Aplicación backend para encontrar películas, canciones y conciertos</p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/liri-node-app"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>

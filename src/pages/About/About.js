@@ -60,7 +60,7 @@ const About = (props) => {
                             </div>
                             {/* resume */}
                             <div className="d-flex flex-column text-center">
-                                <a href="" target="_blank" rel="noopener noreferrer">
+                                <a href="/cv_aldosolano_eng.pdf" target="_blank" rel="noopener noreferrer">
                                     <img src={resume} className="about-img img-fluid mb-2" alt="Resume" />
                                 </a>
                                 <p className="text-muted">CV</p>
@@ -113,7 +113,7 @@ const About = (props) => {
                                 </div>
                                 {/* resume */}
                                 <div className="d-flex flex-column text-center">
-                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                    <a href="/cv_aldosolano_spa.pdf" target="_blank" rel="noopener noreferrer">
                                         <img src={resume} className="about-img img-fluid mb-2" alt="Resume" />
                                     </a>
                                     <p className="text-muted">CV</p>
