@@ -32,7 +32,7 @@ class Home extends Component {
                             <div>
                                 <h1 className="masthead-brand text-light">
                                     <a href="/">Aldo Solano</a>
-                                    
+
                                 </h1>
                             </div>
                         </header>
@@ -61,19 +61,20 @@ class Home extends Component {
             return (
                 <>
 
-                    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                    <div className="cover-container d-flex flex-column p-3 mx-auto w-100 h-100">
 
                         <header className="masthead mb-auto text-center">
                             <div>
                                 <h1 className="masthead-brand text-light">
                                     <a href="/">Aldo Solano</a>
+
                                 </h1>
                             </div>
                         </header>
 
                         <div className="cover text-center">
-                            <h1 className="text-light">Bienvenido a mi Portafolio en línea</h1>
-                            <p className="lead text-light">¡Transformando tus proyectos de buenos a excelentes!</p>
+                            <h1 className="welcoming text-light">Bienvenido a mi portafolio en línea</h1>
+                            <p className="text-muted">¡Transformando tus proyectos de buenos a excelentes!</p>
                             <div className="button" id="button-index">
                                 <div id="circle"></div>
                                 <a href="/about">Entrar</a>
@@ -82,8 +83,8 @@ class Home extends Component {
 
                         <footer className="mastfoot mt-auto mb-3">
                             <div className="d-flex flex-row justify-content-center">
-                                <Button variant="link" className="lang mr-4" onClick={() => this.handleLanguage("eng")}>Inglés</Button>
-                                <Button variant="link" className="lang activelang ml-4" onClick={() => this.handleLanguage("spa")}>Español</Button>
+                                <Button variant="link" className="lang activelang mr-4" onClick={() => this.handleLanguage("eng")}>Inglés</Button>
+                                <Button variant="link" className="lang ml-4" name="toSpa" onClick={() => this.handleLanguage("spa")}>Español</Button>
                             </div>
                         </footer>
                     </div>
