@@ -26,19 +26,20 @@ class Home extends Component {
             return (
                 <>
 
-                    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                    <div className="cover-container d-flex flex-column p-3 mx-auto w-100 h-100">
 
                         <header className="masthead mb-auto text-center">
                             <div>
                                 <h1 className="masthead-brand text-light">
                                     <a href="/">Aldo Solano</a>
+                                    
                                 </h1>
                             </div>
                         </header>
 
                         <div className="cover text-center">
-                            <h1 className="text-light">Welcome to my online portfolio</h1>
-                            <p className="lead text-light">Transforming your projects from good to great!</p>
+                            <h1 className="welcoming text-light">Welcome to my online portfolio</h1>
+                            <p className="text-muted">Transforming your projects from good to great!</p>
                             <div className="button" id="button-index">
                                 <div id="circle"></div>
                                 <a href="/about">Enter</a>
