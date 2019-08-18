@@ -12,9 +12,15 @@ class ReactRouter extends Component {
         <Switch>
 
           <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/about" render={() => <About />} />
-          <Route exact path="/contact" render={() => <Contact />} />
-          <Route exact path="/portfolio" render={() => <Portfolio />} />
+
+          <Route exact path="/about/:lang"
+            render={(lang) => (<About props={lang} />)} />
+
+          <Route exact path="/contact/:lang"
+            render={(lang) => (<Contact props={lang} />)} />
+
+          <Route exact path="/portfolio/:lang"
+            render={(lang) => (<Portfolio props={lang} />)} />
 
           <Redirect to="/" />
 

@@ -17,6 +17,8 @@ class Home extends Component {
             case "spa":
                 this.setState({ english: false });
                 break;
+            default:
+                this.setState({ english: true });
         }
     }
 
@@ -42,7 +44,7 @@ class Home extends Component {
                             <p className="text-muted">Transforming your projects from good to great!</p>
                             <div className="button" id="button-index">
                                 <div id="circle"></div>
-                                <a href="/about">Enter</a>
+                                <a href="/about/eng">Enter</a>
                             </div>
                         </div>
 
@@ -77,7 +79,7 @@ class Home extends Component {
                             <p className="text-muted">¡Transformando tus proyectos de buenos a excelentes!</p>
                             <div className="button" id="button-index">
                                 <div id="circle"></div>
-                                <a href="/about">Entrar</a>
+                                <a href="/about/spa">Entrar</a>
                             </div>
                         </div>
 
