@@ -8,15 +8,14 @@ const Contact = (props) => {
         if (props.props.match.params.lang === "eng")
             return true;
         return false
-    };
+    }
 
     return (
-
         <>
 
             {isEnglish() ? (
 
-                <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" >
                     <header className="masthead text-center">
                         <div>
                             <h1 className="masthead-brand text-light">
@@ -33,26 +32,26 @@ const Contact = (props) => {
                         <hr className="divider" />
                         <h2><b className="text-light">Let's talk,</b></h2>
                         <p className="text-justify">Feel free to get in touch with me. I am always open to discussing new projects,
-                creative ideas or opportunities to be part of your visions.</p>
-                        <Form className="text-left mt-4">
-                            <Form.Group controlId="name">
+creative ideas or opportunities to be part of your visions.</p>
+                        <Form className="text-left mt-4" method="POST" action="https://formspree.io/aldoglez34@gmail.com">
+                            <Form.Group>
                                 <Form.Label>Name *</Form.Label>
-                                <Form.Control type="text" placeholder="Full name" />
+                                <Form.Control type="text" placeholder="Full name" name="name" />
                             </Form.Group>
-                            <Form.Group controlId="email">
+                            <Form.Group>
                                 <Form.Label>Email address *</Form.Label>
-                                <Form.Control type="email" placeholder="name@example.com" />
+                                <Form.Control type="email" placeholder="name@example.com" name="email" />
                             </Form.Group>
                             <Form.Group>
                                 <Form.Label>Subject *</Form.Label>
-                                <Form.Control type="text" placeholder="Subject" />
+                                <Form.Control type="text" placeholder="Subject" name="subject" />
                             </Form.Group>
                             <Form.Group>
                                 <Form.Label>Message *</Form.Label>
-                                <Form.Control as="textarea" placeholder="Your message" rows="3" />
+                                <Form.Control as="textarea" placeholder="Your message" rows="3" name="message" />
                             </Form.Group>
                             <Form.Group className="text-right mt-4">
-                                <Button variant="light" type="submit" className="btn btn-primary">Send</Button>
+                                <Button variant="light" type="submit" className="btn btn-primary" value="Send">Send</Button>
                             </Form.Group>
                         </Form>
                     </main>
@@ -71,42 +70,40 @@ const Contact = (props) => {
                                     <a className="nav-link active" href="/contact/spa">Contacto</a>
                                     <a className="nav-link" href="/portfolio/spa">Portafolio</a>
                                 </nav>
-                            </div>
-                        </header>
+                            </div >
+                        </header >
                         <main className="cover">
                             <hr className="divider" />
                             <h2><b className="text-light">Vamos a hablar,</b></h2>
                             <p className="text-justify">Siéntete libre de ponerte en contacto conmigo. Siempre estoy disponible para discutir nuevos proyectos, ideas creativas u oportunidades de trabajo para ser parte de tus visiones.</p>
-                            <Form className="text-left mt-4">
-                                <Form.Group controlId="name">
+                            <Form className="text-left mt-4" method="POST" action="https://formspree.io/aldoglez34@gmail.com">
+                                <Form.Group>
                                     <Form.Label>Nombre *</Form.Label>
-                                    <Form.Control type="text" placeholder="Nombre completo" />
+                                    <Form.Control type="text" placeholder="Nombre completo" name="name" />
                                 </Form.Group>
-                                <Form.Group controlId="email">
+                                <Form.Group>
                                     <Form.Label>Dirección de correo *</Form.Label>
-                                    <Form.Control type="email" placeholder="nombre@ejemplo.com" />
+                                    <Form.Control type="email" placeholder="nombre@ejemplo.com" name="email" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label>Tema *</Form.Label>
-                                    <Form.Control type="text" placeholder="Tema" />
+                                    <Form.Control type="text" placeholder="Tema" name="subject" />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label>Mensaje *</Form.Label>
-                                    <Form.Control as="textarea" placeholder="Tu mensaje" rows="3" />
+                                    <Form.Control as="textarea" placeholder="Tu mensaje" rows="3" name="message" />
                                 </Form.Group>
                                 <Form.Group className="text-right mt-4">
-                                    <Button variant="light" type="submit" className="btn btn-primary">Enviar</Button>
+                                    <Button variant="light" type="submit" className="btn btn-primary" value="Send">Enviar</Button>
                                 </Form.Group>
                             </Form>
                         </main>
                     </div>
 
                 )}
-
         </>
-
     );
 
-};
+}
 
 export default Contact;
