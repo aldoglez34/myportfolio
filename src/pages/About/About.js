@@ -22,7 +22,7 @@ const About = (props) => {
                     <header className="masthead text-center">
                         <div>
                             <h1 className="masthead-brand text-light">
-                                <a href="/">Aldo Solano</a>
+                                <a href="/eng">Aldo Solano</a>
                             </h1>
                             <nav className="nav nav-masthead justify-content-center">
                                 <a className="nav-link active" href="/about/eng">About</a>
@@ -34,7 +34,7 @@ const About = (props) => {
                     <main className="cover">
                         <hr className="divider" />
                         <h2><b className="text-light">Hello,</b></h2>
-                        <p className="text-justify">My name is Aldo Solano and I'm an experienced Data Analyst and Full Stack Web Developer from Mexico City. Educated at ITESM Full Stack Flex Program, I also have a Computer Science degree at UV. Creativity, organization, patience and curiosity are my strongest intrinsic skills. My technical skills include the development and design of MERN web apps, C#, Java and SQL Server; that combined with my experience in collaborative, deadline-driven environments make me a strong addition to any Full Stack Web Development team.</p>
+                        <p className="text-justify">My name is Aldo Solano and I'm an experienced Data Analyst and Full Stack Web Developer from Mexico City. Educated at Tecnológico de Monterrey Full Stack Flex Program, I also have a Computer Science degree at Universidad Veracruzana. Creativity, organization, patience and curiosity are my strongest intrinsic skills. My technical skills include the development and design of MERN web apps, C#, Java and SQL Server; that combined with my experience in collaborative, deadline-driven environments make me a strong addition to any Full Stack Web Development team.</p>
                         <p className="text-justify">I'm also a senior DBA with 8+ years of solid experience working with Data Mining and Business Intelligence Technologies and over 1 year working on Web Development and Web Design as a Freelance.</p>
                         {/* quote */}
                         <div className="blockquote text-center">
@@ -75,7 +75,7 @@ const About = (props) => {
                         <header className="masthead text-center">
                             <div>
                                 <h1 className="masthead-brand text-light">
-                                    <a href="/">Aldo Solano</a>
+                                    <a href="/spa">Aldo Solano</a>
                                 </h1>
                                 <nav className="nav nav-masthead justify-content-center">
                                     <a className="nav-link active" href="/about/spa">Acerca</a>
@@ -87,7 +87,7 @@ const About = (props) => {
                         <main className="cover">
                             <hr className="divider" />
                             <h2><b className="text-light">Hola,</b></h2>
-                            <p className="text-justify">Me llamo Aldo Solano y soy un experimentado Analista de Datos, Desarrollador y Diseñador Web Full Stack de la Ciudad de México. Recibí mi educación en el programa Full Stack Flex del ITESM, también cuento con una licenciatura en Ciencias de la Computación por la UV. Creatividad, organización, paciencia y curiosidad son mis principales motivaciones intrínsecas. Mis habilidades técnicas incluyen el desarrollo y diseño de aplicaciones MERN, C#, Java y SQL Server; eso combinado con mi experiencia en entornos colaborativos y con altos niveles de presión me convierten en una sólida incorporación a cualquier equipo de Desarrollo Web Full Stack.</p>
+                            <p className="text-justify">Me llamo Aldo Solano y soy un experimentado Analista de Datos, Desarrollador y Diseñador Web Full Stack de la Ciudad de México. Recibí mi educación en el programa Full Stack Flex del Tecnológico de Monterrey, también cuento con una licenciatura en Ciencias de la Computación por la Universidad Veracruzana. Creatividad, organización, paciencia y curiosidad son mis principales motivaciones intrínsecas. Mis habilidades técnicas incluyen el desarrollo y diseño de aplicaciones MERN, C#, Java y SQL Server; eso combinado con mi experiencia en entornos colaborativos y con altos niveles de presión me convierten en una sólida incorporación a cualquier equipo de Desarrollo Web Full Stack.</p>
                             <p className="text-justify">También soy un DBA senior con más de 8 años de experiencia trabajando con Minería de Datos, Inteligencia de Negocios y más de 1 año trabajando con Desarrollo y Diseño Web como Freelance.</p>
                             {/* quote */}
                             <div className="blockquote text-center">

@@ -19,7 +19,7 @@ const Portfolio = (props) => {
                     <header className="masthead text-center">
                         <div>
                             <h1 className="masthead-brand text-light">
-                                <a href="/">Aldo Solano</a>
+                                <a href="/eng">Aldo Solano</a>
                             </h1>
                             <nav className="nav nav-masthead justify-content-center">
                                 <a className="nav-link" href="/about/eng">About</a>
@@ -33,6 +33,26 @@ const Portfolio = (props) => {
                         <h2><b className="text-light">My projects,</b></h2>
                         <p className="text-justify">I've got Frontend, Backend and Full Stack apps. In the white circle you can find the framework I used, but if you want more detail you can always go to the Github repo.</p>
                         <ul className="list-unstyled mt-4">
+                            <Media as="li">
+                                <img
+                                    width={64}
+                                    height={64}
+                                    className="mr-3"
+                                    src="https://image.flaticon.com/icons/svg/148/148963.svg"
+                                    alt="aag"
+                                />
+                                <Media.Body>
+                                    <h5><b>AAG<span className="badge badge-pill badge-light ml-2">React</span></b></h5>
+                                    <p className="mb-0">My most ambicious project to date <small className="text-muted">(under development)</small></p>
+                                    <p>
+                                        <a className="text-warning" href="https://github.com/aldoglez34/audit"
+                                            target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                        <span className="mx-2">/</span>
+                                        <a className="text-warning" href="https://immense-badlands-57890.herokuapp.com/login"
+                                            target="_blank" rel="noopener noreferrer">Heroku App</a>
+                                    </p>
+                                </Media.Body>
+                            </Media>
                             <Media as="li">
                                 <img
                                     width={64}
@@ -105,7 +125,7 @@ const Portfolio = (props) => {
                                 <Media.Body>
                                     <h5><b>Complemento Natural
                                 <span className="badge badge-pill badge-light ml-2">React</span></b></h5>
-                                    <p className="mb-0">E-commerce <small className="text-muted">(under construction)</small></p>
+                                    <p className="mb-0">E-commerce <small className="text-muted">(under development)</small></p>
                                     <p>
                                         <a className="text-warning" href="https://github.com/aldoglez34/complemento"
                                             target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -199,7 +219,7 @@ const Portfolio = (props) => {
                         <header className="masthead text-center">
                             <div>
                                 <h1 className="masthead-brand text-light">
-                                    <a href="/">Aldo Solano</a>
+                                    <a href="/spa">Aldo Solano</a>
                                 </h1>
                                 <nav className="nav nav-masthead justify-content-center">
                                     <a className="nav-link" href="/about/spa">Acerca</a>
@@ -213,6 +233,26 @@ const Portfolio = (props) => {
                             <h2><b className="text-light">Mis proyectos,</b></h2>
                             <p className="text-justify">Tengo apps Backend, Frontend y Full Stack. En el círculo blanco puedes ver qué Framework utilizo, si quieres más detalle visita el repositorio Github.</p>
                             <ul className="list-unstyled mt-4">
+                                <Media as="li">
+                                    <img
+                                        width={64}
+                                        height={64}
+                                        className="mr-3"
+                                        src="https://image.flaticon.com/icons/svg/148/148963.svg"
+                                        alt="aag"
+                                    />
+                                    <Media.Body>
+                                        <h5><b>AAG<span className="badge badge-pill badge-light ml-2">React</span></b></h5>
+                                        <p className="mb-0">Mi proyecto más ambicioso a la fecha <small className="text-muted">(aún bajo desarrollo)</small></p>
+                                        <p>
+                                            <a className="text-warning" href="https://github.com/aldoglez34/audit"
+                                                target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+                                            <span className="mx-2">/</span>
+                                            <a className="text-warning" href="https://immense-badlands-57890.herokuapp.com/login"
+                                                target="_blank" rel="noopener noreferrer">Heroku App</a>
+                                        </p>
+                                    </Media.Body>
+                                </Media>
                                 <Media as="li">
                                     <img
                                         width={64}
@@ -285,7 +325,7 @@ const Portfolio = (props) => {
                                     <Media.Body>
                                         <h5><b>Complemento Natural
                                 <span className="badge badge-pill badge-light ml-2">React</span></b></h5>
-                                        <p className="mb-0">Comercio electrónico <small className="text-muted">(bajo construcción)</small></p>
+                                        <p className="mb-0">Comercio electrónico <small className="text-muted">(aún bajo desarrollo)</small></p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/complemento"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>

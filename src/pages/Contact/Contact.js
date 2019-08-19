@@ -20,7 +20,7 @@ const Contact = (props) => {
                     <header className="masthead text-center">
                         <div>
                             <h1 className="masthead-brand text-light">
-                                <a href="/">Aldo Solano</a>
+                                <a href="/eng">Aldo Solano</a>
                             </h1>
                             <nav className="nav nav-masthead justify-content-center">
                                 <a className="nav-link" href="/about/eng">About</a>
@@ -64,7 +64,7 @@ const Contact = (props) => {
                         <header className="masthead text-center">
                             <div>
                                 <h1 className="masthead-brand text-light">
-                                    <a href="/">Aldo Solano</a>
+                                    <a href="/spa">Aldo Solano</a>
                                 </h1>
                                 <nav className="nav nav-masthead justify-content-center">
                                     <a className="nav-link" href="/about/spa">Acerca</a>

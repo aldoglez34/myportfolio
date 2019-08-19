@@ -11,7 +11,8 @@ class ReactRouter extends Component {
       <BrowserRouter>
         <Switch>
 
-          <Route exact path="/" render={() => <Home />} />
+          <Route exact path="/:lang"
+            render={(lang) => (<Home props={lang} />)} />
 
           <Route exact path="/about/:lang"
             render={(lang) => (<About props={lang} />)} />
@@ -22,7 +23,7 @@ class ReactRouter extends Component {
           <Route exact path="/portfolio/:lang"
             render={(lang) => (<Portfolio props={lang} />)} />
 
-          <Redirect to="/" />
+          <Redirect to="/spa" />
 
         </Switch>
       </BrowserRouter>
