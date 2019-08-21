@@ -148,7 +148,7 @@ const About = props => {
               educación en el programa Full Stack Flex del Tecnológico de
               Monterrey, también cuento con una Licenciatura en Informática por
               la Universidad Veracruzana. Creatividad, organización, paciencia y
-              cursiosidad son mis principales habilidades intrínsecas. Mis
+              curiosidad son mis principales habilidades intrínsecas. Mis
               habilidades técnicas incluyen el desarrollo y diseño de
               aplicaciones MERN, C#, Java y SQL Server; eso combinado con mi
               experiencia en entornos colaborativos y con altos niveles de
