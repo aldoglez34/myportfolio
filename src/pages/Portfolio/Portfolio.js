@@ -43,7 +43,7 @@ const Portfolio = (props) => {
                                 />
                                 <Media.Body>
                                     <h5><b>AAG<span className="badge badge-pill badge-light ml-2">React</span></b></h5>
-                                    <p className="mb-0">My most ambicious project to date <small className="text-muted">(under development)</small></p>
+                                    <p className="mb-0">Governmental Audit Assistant <small className="text-muted">(under development)</small></p>
                                     <p>
                                         <a className="text-warning" href="https://github.com/aldoglez34/audit"
                                             target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -243,7 +243,7 @@ const Portfolio = (props) => {
                                     />
                                     <Media.Body>
                                         <h5><b>AAG<span className="badge badge-pill badge-light ml-2">React</span></b></h5>
-                                        <p className="mb-0">Mi proyecto más ambicioso a la fecha <small className="text-muted">(aún bajo desarrollo)</small></p>
+                                        <p className="mb-0">Asistente de Auditoría Gubernamental <small className="text-muted">(aún bajo desarrollo)</small></p>
                                         <p>
                                             <a className="text-warning" href="https://github.com/aldoglez34/audit"
                                                 target="_blank" rel="noopener noreferrer">GitHub Repo</a>

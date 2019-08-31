@@ -75,7 +75,7 @@ creative ideas or opportunities to be part of your visions.</p>
                         <main className="cover">
                             <hr className="divider" />
                             <h2><b className="text-light">Vamos a hablar,</b></h2>
-                            <p className="text-justify">Siéntete libre de ponerte en contacto conmigo. Siempre estoy disponible para discutir nuevos proyectos, ideas creativas u oportunidades de trabajo para ser parte de tus visiones.</p>
+                            <p className="text-justify">Eres libre de ponerte en contacto conmigo. Siempre estoy disponible para discutir nuevos proyectos, ideas creativas y oportunidades de trabajo para ser parte de tus visiones.</p>
                             <Form className="text-left mt-4" method="POST" action="https://formspree.io/aldoglez34@gmail.com">
                                 <Form.Group>
                                     <Form.Label>Nombre *</Form.Label>
