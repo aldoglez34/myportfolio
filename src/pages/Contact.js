@@ -29,8 +29,8 @@ const Contact = (props) => {
                         </div>
                     </header>
                     <main className="cover">
+                        <h2 className="text-light text-center my-4"><b>Let's talk</b></h2>
                         <hr className="divider" />
-                        <h2><b className="text-light">Let's talk,</b></h2>
                         <p className="text-justify">Feel free to get in touch with me. I am always open to discussing new projects,
 creative ideas or opportunities to be part of your visions.</p>
                         <Form className="text-left mt-4" method="POST" action="https://formspree.io/aldoglez34@gmail.com">
@@ -73,9 +73,9 @@ creative ideas or opportunities to be part of your visions.</p>
                             </div >
                         </header >
                         <main className="cover">
+                            <h2 className="text-light text-center my-4"><b>Vamos a hablar</b></h2>
                             <hr className="divider" />
-                            <h2><b className="text-light">Vamos a hablar,</b></h2>
-                            <p className="text-justify">Eres libre de ponerte en contacto conmigo. Siempre estoy disponible para discutir nuevos proyectos, ideas creativas y oportunidades de trabajo para ser parte de tus visiones.</p>
+                            <p className="text-justify">Siéntete libre de ponerte en contacto conmigo. Siempre estoy disponible para participar en nuevos proyectos, ideas u oportunidades de trabajo y ser parte de tus visiones.</p>
                             <Form className="text-left mt-4" method="POST" action="https://formspree.io/aldoglez34@gmail.com">
                                 <Form.Group>
                                     <Form.Label>Nombre *</Form.Label>

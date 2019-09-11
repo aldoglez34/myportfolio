@@ -49,6 +49,7 @@ body {
 
 .divider {
   margin-top: 10px;
+  margin-bottom: 30px;
   background-color: gainsboro;
   opacity: 0.3;
 }

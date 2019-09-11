@@ -1,10 +1,11 @@
 import React from "react";
-import github from "../../images/github.png";
-import linkedin from "../../images/linkedin.png";
-import resume from "../../images/resume.png";
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import resume from "../images/resume.png";
 import "./about.css";
 
 const About = props => {
+
   const isEnglish = () => {
     if (props.props.match.params.lang === "eng") return true;
     return false;
@@ -33,10 +34,8 @@ const About = props => {
             </div>
           </header>
           <main className="cover">
+            <h2 className="text-light text-center my-4"><b>About me</b></h2>
             <hr className="divider" />
-            <h2>
-              <b className="text-light">Hello,</b>
-            </h2>
             <p className="text-justify">
               My name is Aldo Solano and I'm an experienced Full Stack Web
               Developer and Data Analyst from Mexico City. Educated at
@@ -145,10 +144,8 @@ const About = props => {
               </div>
             </header>
             <main className="cover">
+              <h2 className="text-light text-center my-4"><b>Acerca de mí</b></h2>
               <hr className="divider" />
-              <h2>
-                <b className="text-light">Hola,</b>
-              </h2>
               <p className="text-justify">
                 Me llamo Aldo Solano y soy un experimentado Analista de Datos,
                 Desarrollador y Diseñador Web de la Ciudad de México. Recibí mi
