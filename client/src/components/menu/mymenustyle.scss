@@ -1,0 +1,17 @@
+.nav-link {
+  color: white !important;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 19px;
+  border-bottom: 0.25rem solid transparent;
+
+  &:hover {
+    color: darkgoldenrod !important;
+    transition: 0.3s;
+  }
+
+  &.active {
+    color: goldenrod !important;
+    border-bottom-color: goldenrod;
+  }
+}

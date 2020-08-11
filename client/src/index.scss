@@ -1,0 +1,36 @@
+#root {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: gainsboro;
+  background-image: url("/images/bg.jpg");
+  background-color: gray;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url("/images/bg-small.jpg");
+    background-color: gray;
+    background-blend-mode: multiply;
+  }
+}
