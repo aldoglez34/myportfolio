@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <MyNavbar />
-      <Container id="maincontainer" className="py-1 px-0">
+      <Container id="maincontainer" className="py-4 px-0">
         {children}
       </Container>
       <ScrollButton scrollStepInPx={150} delayInMs={16.66} />
