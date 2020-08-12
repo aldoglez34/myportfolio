@@ -28,7 +28,7 @@ const Contact = () => {
   return (
     <Fade>
       <Subtitle text="Contacto" />
-      <Row id="Contacto">
+      <Row>
         <Col md={{ offset: 3, span: 6 }}>
           <Formik
             initialValues={{

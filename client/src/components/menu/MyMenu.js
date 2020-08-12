@@ -2,20 +2,18 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 import "./mymenustyle.scss";
 import Slide from "react-reveal/Slide";
+import { HashLink as Link } from "react-router-hash-link";
 
 const MyMenu = () => {
   return (
     <Nav className="ml-auto">
       <Slide top>
-        <a className="nav-link active" href="/">
-          Acerca
-        </a>
-        <a className="nav-link" href="/">
+        <Link className="nav-link" smooth to="/#Proyectos">
           Proyectos
-        </a>
-        <a className="nav-link" href="/">
+        </Link>
+        <Link className="nav-link" smooth to="/#Contacto">
           Contacto
-        </a>
+        </Link>
       </Slide>
     </Nav>
   );

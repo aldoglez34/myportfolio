@@ -9,9 +9,9 @@ const LandingPage = () => {
   return (
     <Layout>
       <Intro />
-      <hr className="myDivider" />
+      <hr className="myDivider" id="Proyectos" />
       <MyProjects />
-      <hr className="myDivider" />
+      <hr className="myDivider" id="Contacto" />
       <Contact />
     </Layout>
   );
