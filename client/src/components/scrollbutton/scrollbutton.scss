@@ -13,13 +13,14 @@
 
   cursor: pointer;
 
-  background-color: gainsboro;
+  background-color: white;
+  opacity: 0.6 !important;
   color: #5c3b3c;
   padding: 8px;
   font-size: 1.4rem;
 
   &:hover {
-    background-color: white;
-    transition: 0.3s;
+    opacity: 1 !important;
+    transition: 0.4s;
   }
 }

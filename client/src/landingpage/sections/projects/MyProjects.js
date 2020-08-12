@@ -1,6 +1,8 @@
 import React from "react";
 import Project from "./components/Project";
-import { ButtonGroup } from "react-bootstrap";
+import { CardDeck } from "react-bootstrap";
+import Fade from "react-reveal/Fade";
+import Subtitle from "../../../components/subtitle/Subtitle";
 
 const MyProjects = () => {
   const myprojects = [
@@ -8,38 +10,52 @@ const MyProjects = () => {
       img: "/images/math.png",
       title: "MeXmáticas",
       link: "https://mathprojectmex.herokuapp.com/",
+      description:
+        "Escuela de matemáticas, venta de cursos en línea, miles de ejercicios.",
     },
     {
-      img: "/images/math.png",
+      img: "/images/complemento.png",
       title: "Complemento",
-      link: "https://mathprojectmex.herokuapp.com/",
+      link: "https://young-mesa-38921.herokuapp.com/",
+      description:
+        "Tienda en línea, venta de productos de salud complementarios.",
     },
     {
-      img: "/images/math.png",
+      img: "/images/calentadores.png",
       title: "WebScraping",
-      link: "https://mathprojectmex.herokuapp.com/",
+      link: "https://calentadores.herokuapp.com/",
+      description: "Extracción de información de diferentes sitios web.",
     },
     {
-      img: "/images/math.png",
+      img: "/images/audit.png",
       title: "APAG",
-      link: "https://mathprojectmex.herokuapp.com/",
+      link: "https://immense-badlands-57890.herokuapp.com/login",
+      description: "Auxiliar en proceso de auditoría gubernamental.",
     },
   ];
 
   return (
-    <section>
-      <h2 className="text-center">Proyectos</h2>
+    <Fade>
+      <Subtitle text="Proyectos" />
       <div className="text-center">
         Estos son algunos de los proyectos en los que he trabajado.
       </div>
       <div className=" mt-3 d-flex flex-row justify-content-center">
-        <ButtonGroup aria-label="Basic example">
+        <CardDeck>
           {myprojects.map((p) => {
-            return <Project img={p.img} link={p.link} title={p.title} />;
+            return (
+              <Project
+                key={p.title}
+                img={p.img}
+                link={p.link}
+                title={p.title}
+                description={p.description}
+              />
+            );
           })}
-        </ButtonGroup>
+        </CardDeck>
       </div>
-    </section>
+    </Fade>
   );
 };
 

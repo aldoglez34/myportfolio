@@ -3,6 +3,8 @@ import { Formik, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import ProjectType from "./components/ProjectType";
+import Fade from "react-reveal/Fade";
+import Subtitle from "../../../components/subtitle/Subtitle";
 
 const Contact = () => {
   const yupschema = yup.object({
@@ -24,10 +26,10 @@ const Contact = () => {
   const [type, setType] = useState("");
 
   return (
-    <>
-      <h2 className="text-center text-white">Contacto</h2>
-      <Row>
-        <Col md={{ offset: 2, span: 8 }}>
+    <Fade>
+      <Subtitle text="Contacto" />
+      <Row id="Contacto">
+        <Col md={{ offset: 3, span: 6 }}>
           <Formik
             initialValues={{
               name: "",
@@ -143,7 +145,7 @@ const Contact = () => {
           </Formik>
         </Col>
       </Row>
-    </>
+    </Fade>
   );
 };
 

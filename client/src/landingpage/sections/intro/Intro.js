@@ -1,17 +1,35 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+import { Button } from "react-bootstrap";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Intro = () => {
   return (
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut felis
-      finibus, placerat justo ut, pharetra dolor. Integer iaculis faucibus
-      ligula, et sollicitudin lectus vehicula a. Fusce ac fermentum mauris.
-      Vestibulum posuere ex nec urna tincidunt, id scelerisque mi consectetur.
-      Vivamus placerat est tincidunt placerat ultricies. Quisque placerat felis
-      eu pretium iaculis. Morbi gravida dolor ex, eget varius nunc egestas quis.
-      Praesent eget erat ut augue dapibus tempor. Etiam eu nibh justo. Integer
-      vel sem id lacus lobortis lacinia vel et ligula.
-    </p>
+    <Fade>
+      <h1 className="display-3">
+        Hola, me llamo <u>Aldo Solano</u> y hago páginas web.
+      </h1>
+      <div className="d-flex flex-column">
+        <span className="lead">
+          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          Páginas de publicidad, anunciando tu servicio o compañía.
+        </span>
+        <span className="lead">
+          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          Tiendas en línea, donde tú tienes el control sobre tus productos.
+        </span>
+        <span className="lead">
+          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          Aplicaciones web complejas para tu empresa.
+        </span>
+      </div>
+
+      <Link smooth to="/#Contacto">
+        <Button variant="light" className="shadow mt-3" size="lg">
+          Contáctame
+        </Button>
+      </Link>
+    </Fade>
   );
 };
 

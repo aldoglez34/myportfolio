@@ -6,8 +6,8 @@ import "./mynavbar.scss";
 
 const MyNavbar = React.memo(() => {
   return (
-    <Navbar fixed="top" id="navbarstyle">
-      <Container id="navbarcontainer">
+    <Navbar expand="md" fixed="top" id="navbarstyle" className="shadow">
+      <Container>
         <MyLogo />
         <MyMenu />
       </Container>
