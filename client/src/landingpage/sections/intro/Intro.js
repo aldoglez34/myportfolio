@@ -35,7 +35,7 @@ const Intro = () => {
       </div>
 
       <Link smooth to="/#Contacto">
-        <Button variant="light" className="shadow mt-3" size="lg">
+        <Button variant="light" className="shadow mt-1" size="lg">
           Contáctame
         </Button>
       </Link>

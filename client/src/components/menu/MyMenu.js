@@ -11,6 +11,9 @@ const MyMenu = () => {
         <Link className="nav-link" smooth to="/#Proyectos">
           Proyectos
         </Link>
+        <Link className="nav-link" smooth to="/#Sociales">
+          Sociales
+        </Link>
         <Link className="nav-link" smooth to="/#Contacto">
           Contacto
         </Link>

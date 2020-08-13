@@ -1,12 +1,14 @@
 import React from "react";
-import "./footer.scss";
+import "./socials.scss";
 import Fade from "react-reveal/Fade";
+import Subtitle from "../../../components/subtitle/Subtitle";
 
-const MyFooter = () => {
+const MySocials = () => {
   return (
     <footer id="myfooterstyle" className="mt-auto text-center">
       <Fade>
-        <span className="lead text-center text-light">- Sociales -</span>
+        <Subtitle text="Sociales" />
+        <p>A continuación están los vínculos donde puedes contactarme.</p>
         <div className="d-flex flex-row justify-content-center text-white">
           {/* twitter */}
           <a
@@ -54,4 +56,4 @@ const MyFooter = () => {
   );
 };
 
-export default MyFooter;
+export default MySocials;

@@ -6,10 +6,23 @@ import "./mynavbar.scss";
 
 const MyNavbar = React.memo(() => {
   return (
-    <Navbar expand="md" fixed="top" id="navbarstyle" className="shadow">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      variant="dark"
+      fixed="top"
+      id="navbarstyle"
+      className="shadow"
+    >
       <Container>
+        {/* logo */}
         <MyLogo />
-        <MyMenu />
+        {/* toggle */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        {/* collapsed */}
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <MyMenu />
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
