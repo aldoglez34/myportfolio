@@ -7,19 +7,28 @@ const Intro = () => {
   return (
     <Fade>
       <h1 className="display-3">
-        Hola, me llamo <u>Aldo Solano</u> y hago páginas web.
+        Hola, me llamo Aldo Solano y hago páginas web.
       </h1>
       <div className="d-flex flex-column">
         <span className="lead">
-          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          <i
+            className="far fa-arrow-alt-circle-right mr-2"
+            style={{ color: "goldenrod" }}
+          />
           Páginas de publicidad, anunciando tu servicio o compañía.
         </span>
         <span className="lead">
-          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          <i
+            className="far fa-arrow-alt-circle-right mr-2"
+            style={{ color: "goldenrod" }}
+          />
           Tiendas en línea, donde tú tienes el control sobre tus productos.
         </span>
         <span className="lead">
-          <i className="far fa-arrow-alt-circle-right text-muted mr-2" />
+          <i
+            className="far fa-arrow-alt-circle-right mr-2"
+            style={{ color: "goldenrod" }}
+          />
           Aplicaciones web complejas para tu empresa.
         </span>
       </div>

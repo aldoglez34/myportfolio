@@ -6,7 +6,7 @@ const MyFooter = () => {
   return (
     <footer id="myfooterstyle" className="mt-auto text-center">
       <Fade>
-        <span className="lead text-center text-muted">- Sociales -</span>
+        <span className="lead text-center text-light">- Sociales -</span>
         <div className="d-flex flex-row justify-content-center text-white">
           {/* twitter */}
           <a
