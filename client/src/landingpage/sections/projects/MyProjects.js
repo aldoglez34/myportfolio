@@ -37,9 +37,9 @@ const MyProjects = () => {
   return (
     <Fade>
       <Subtitle text="Proyectos" />
-      <div className="text-center">
+      <p className="text-center">
         Estos son algunos de los proyectos en los que he trabajado.
-      </div>
+      </p>
       <div className=" mt-3 d-flex flex-row justify-content-center">
         <CardDeck>
           {myprojects.map((p) => {

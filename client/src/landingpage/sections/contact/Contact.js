@@ -28,6 +28,10 @@ const Contact = () => {
   return (
     <Fade>
       <Subtitle text="Contacto" />
+      <p className="text-center">
+        Describe brevemente tu proyecto y contáctame usando el siguiente
+        formulario.
+      </p>
       <Row>
         <Col md={{ offset: 3, span: 6 }}>
           <Formik

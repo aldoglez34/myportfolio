@@ -8,7 +8,7 @@ const MySocials = () => {
     <footer id="myfooterstyle" className="mt-auto text-center">
       <Fade>
         <Subtitle text="Sociales" />
-        <p>A continuación están los vínculos donde puedes contactarme.</p>
+        <p>A continuación están los vínculos a mis redes sociales.</p>
         <div className="d-flex flex-row justify-content-center text-white">
           {/* twitter */}
           <a
