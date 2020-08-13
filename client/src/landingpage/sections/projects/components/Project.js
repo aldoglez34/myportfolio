@@ -4,13 +4,13 @@ import PropTypes from "prop-types";
 
 const Project = React.memo(({ img, link, title, description }) => {
   return (
-    <Card bg="transparent" border="secondary" className="shadow">
+    <Card bg="transparent" border="dark" className="shadow">
       <Card.Img variant="top" src={img} />
       <Card.Body className="d-flex flex-column">
         <Card.Title>
           <strong>{title}</strong>
         </Card.Title>
-        <Card.Text style={{ color: "gray" }}>{description}</Card.Text>
+        <Card.Text style={{ color: "gainsboro" }}>{description}</Card.Text>
         <Button
           variant="light"
           href={link}
