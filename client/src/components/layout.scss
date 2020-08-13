@@ -3,3 +3,9 @@
   padding-top: 55px !important;
   padding-bottom: 75px !important;
 }
+
+@media screen and (max-width: 768px) {
+  #mainContainer {
+    padding-top: 5px !important;
+  }
+}

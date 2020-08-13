@@ -30,7 +30,7 @@ const MyProjects = () => {
       img: "/images/audit.png",
       title: "APAG",
       link: "https://immense-badlands-57890.herokuapp.com/login",
-      description: "Auxiliar en proceso de auditoría gubernamental.",
+      description: "Auxiliar en el proceso de auditoría gubernamental.",
     },
   ];
 

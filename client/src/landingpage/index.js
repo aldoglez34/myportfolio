@@ -4,7 +4,6 @@ import Intro from "./sections/intro/Intro";
 import MyProjects from "./sections/projects/MyProjects";
 import Contact from "./sections/contact/Contact";
 import MySocials from "./sections/socials/MySocials";
-import "./landingpage.scss";
 
 const LandingPage = () => {
   return (
