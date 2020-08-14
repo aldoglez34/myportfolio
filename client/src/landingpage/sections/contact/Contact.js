@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <Fade>
       <Subtitle text="Contacto" />
-      <p className="lead text-center mb-4">
+      <p className="lead text-center mb-3">
         Describe brevemente tu proyecto y contáctame usando el siguiente
         formulario.
       </p>
@@ -176,6 +176,13 @@ const Contact = () => {
           </Formik>
         </Col>
       </Row>
+      <p className="lead text-center mb-0 mt-3">
+        También puedes comunicarte conmigo al siguiente número
+      </p>
+      <p className="lead text-center mb-4">
+        <i className="fab fa-whatsapp mr-1" style={{ color: "goldenrod" }} />
+        228 111 20 31
+      </p>
     </Fade>
   );
 };
