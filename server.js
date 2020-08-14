@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const morgan = require("morgan");
-// const routes = require("./routes");
+const routes = require("./routes");
 const bodyParser = require("body-parser");
 
 // middleware
@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // API routes
-// app.use(routes);
+app.use(routes);
 
 // send every other request to the React app
 // define any API routes before this runs

@@ -37,7 +37,7 @@ const MyProjects = () => {
   return (
     <Fade>
       <Subtitle text="Proyectos" />
-      <p className="text-center">
+      <p className="lead text-center mb-4">
         Estos son algunos de los proyectos en los que he trabajado.
       </p>
       <div className=" mt-3 d-flex flex-row justify-content-center">

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Formik, ErrorMessage } from "formik";
 import * as yup from "yup";
-import { Form, Button, Row, Col } from "react-bootstrap";
+import { Form, Button, Row, Col, Spinner } from "react-bootstrap";
 import ProjectType from "./components/ProjectType";
 import Fade from "react-reveal/Fade";
 import Subtitle from "../../../components/subtitle/Subtitle";
+import API from "../../../utils/API";
 
 const Contact = () => {
   const yupschema = yup.object({
@@ -28,7 +29,7 @@ const Contact = () => {
   return (
     <Fade>
       <Subtitle text="Contacto" />
-      <p className="text-center">
+      <p className="lead text-center mb-4">
         Describe brevemente tu proyecto y contáctame usando el siguiente
         formulario.
       </p>
@@ -39,16 +40,23 @@ const Contact = () => {
               name: "",
               email: "",
               description: "",
-              // type: "",
             }}
             validationSchema={yupschema}
             onSubmit={(values, { setSubmitting }) => {
               setSubmitting(true);
               values.type = type;
-              console.log(values);
-              alert(
-                "Gracias por ponerte en contacto conmigo, te responderé a la brevedad al correo proporcionado"
-              );
+              API.sendEmail(values)
+                .then((res) => {
+                  console.log(res);
+                  alert(res.data);
+                  setSubmitting(false);
+                })
+                .catch((err) => {
+                  console.log(err);
+                  alert(
+                    "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
+                  );
+                });
             }}
           >
             {({
@@ -141,7 +149,15 @@ const Contact = () => {
                     type="submit"
                     disabled={isSubmitting}
                   >
-                    Enviar
+                    {isSubmitting ? (
+                      <div
+                        style={{ paddingLeft: "13px", paddingRight: "13px" }}
+                      >
+                        <Spinner size="sm" animation="border" />
+                      </div>
+                    ) : (
+                      "Enviar"
+                    )}
                   </Button>
                 </Form.Group>
               </Form>
