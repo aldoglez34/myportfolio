@@ -177,7 +177,7 @@ const Contact = () => {
         </Col>
       </Row>
       <p className="lead text-center mb-0 mt-3">
-        También puedes comunicarte conmigo al siguiente número
+        También puedes comunicarte conmigo al siguiente número.
       </p>
       <p className="lead text-center mb-4">
         <i className="fab fa-whatsapp mr-1" style={{ color: "goldenrod" }} />
