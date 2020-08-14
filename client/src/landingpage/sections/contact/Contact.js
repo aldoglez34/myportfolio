@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Formik, ErrorMessage } from "formik";
+import React from "react";
+import { Formik, ErrorMessage, Field } from "formik";
 import * as yup from "yup";
 import { Form, Button, Row, Col, Spinner } from "react-bootstrap";
 import TypeSelector from "./components/TypeSelector";
@@ -24,8 +24,6 @@ const Contact = () => {
     description: yup.string().required("Requerido"),
   });
 
-  // const [type, setType] = useState("");
-
   return (
     <Fade>
       <Subtitle text="Contacto" />
@@ -42,25 +40,23 @@ const Contact = () => {
               description: "",
               type: "",
             }}
-            // validationSchema={yupschema}
+            validationSchema={yupschema}
             onSubmit={(values, { setSubmitting }) => {
-              // setSubmitting(true);
-              setSubmitting(false);
-              console.log("values", values);
-              // values.type = type;
-              // API.sendEmail(values)
-              //   .then((res) => {
-              //     console.log(res);
-              //     alert(res.data);
-              //     setSubmitting(false);
-              //   })
-              //   .catch((err) => {
-              //     console.log(err);
-              //     alert(
-              //       "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
-              //     );
-              //     setSubmitting(false);
-              //   });
+              setSubmitting(true);
+              // console.log("values", values);
+              API.sendEmail(values)
+                .then((res) => {
+                  // console.log(res);
+                  alert(res.data);
+                  setSubmitting(false);
+                })
+                .catch((err) => {
+                  console.log(err);
+                  alert(
+                    "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
+                  );
+                  setSubmitting(false);
+                });
             }}
           >
             {({
@@ -118,18 +114,22 @@ const Contact = () => {
                   </Form.Group>
                 </Form.Row>
                 {/* type */}
-                <Form.Row>
-                  <Form.Group as={Col}>
-                    <Form.Label>Tipo de proyecto</Form.Label>
-                    <br />
-                    <TypeSelector value={values.type} onChange={handleChange} />
-                    <ErrorMessage
-                      className="text-danger"
-                      name="type"
-                      component="div"
-                    />
-                  </Form.Group>
-                </Form.Row>
+                <Field name="type" id="type" type="string">
+                  {({ field: { value }, form: { setFieldValue } }) => (
+                    <div className="mb-3">
+                      <label htmlFor="type">Tipo</label>
+                      <TypeSelector
+                        selected={value}
+                        handleClick={(str) => setFieldValue("type", str)}
+                      />
+                    </div>
+                  )}
+                </Field>
+                <ErrorMessage
+                  className="text-danger"
+                  name="type"
+                  component="div"
+                />
                 {/* description */}
                 <Form.Row>
                   <Form.Group as={Col}>
