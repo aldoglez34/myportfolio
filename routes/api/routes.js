@@ -4,16 +4,18 @@ const nodemailer = require("nodemailer");
 // sendEmail()
 // matches with /api/sendEmail
 router.post("/sendEmail", async function (req, res) {
-  // create transporter object with smtp server details
-  const transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    // host: "smtp.gmail.com",
-    port: 587,
+  // load stuff from the .env file
+  const nodemailerConfig = {
+    host: process.env.REACT_APP_HOST,
+    port: process.env.REACT_APP_PORT,
     auth: {
-      user: "rod.schmitt@ethereal.email",
-      pass: "6HtBBXE7EH6SDK7JXD",
+      user: process.env.REACT_APP_USER,
+      pass: process.env.REACT_APP_PASS,
     },
-  });
+  };
+
+  // create transporter object with smtp server details
+  const transporter = nodemailer.createTransport(nodemailerConfig);
 
   // build message
   const { email, name, type, description } = req.body;

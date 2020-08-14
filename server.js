@@ -10,6 +10,9 @@ const bodyParser = require("body-parser");
 // use morgan logger for logging requests
 app.use(morgan("dev"));
 
+// requiring gotenv
+require("dotenv").config();
+
 // parse request body as JSON (using body-parser)
 // parse application/json (using body-parser)
 app.use(bodyParser.json({ limit: "50mb", extended: true }));
