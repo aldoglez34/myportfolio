@@ -12,8 +12,9 @@ const TypeSelector = React.memo(({ selected, handleClick }) => {
         checked={selected === "Publicidad"}
         onChange={(e) => handleClick(e.currentTarget.value)}
         style={{ cursor: "pointer" }}
+        className="d-flex justify-content-center"
       >
-        Publicidad
+        <span className="d-flex align-items-center">Publicidad</span>
       </ToggleButton>
       <ToggleButton
         type="radio"
@@ -22,8 +23,9 @@ const TypeSelector = React.memo(({ selected, handleClick }) => {
         checked={selected === "Tienda en Línea"}
         onChange={(e) => handleClick(e.currentTarget.value)}
         style={{ cursor: "pointer" }}
+        className="d-flex justify-content-center"
       >
-        Tienda en Línea
+        <span className="d-flex align-items-center">Tienda en Línea</span>
       </ToggleButton>
       <ToggleButton
         type="radio"
@@ -32,8 +34,9 @@ const TypeSelector = React.memo(({ selected, handleClick }) => {
         checked={selected === "Aplicación Web"}
         onChange={(e) => handleClick(e.currentTarget.value)}
         style={{ cursor: "pointer" }}
+        className="d-flex justify-content-center"
       >
-        Aplicación Web
+        <span className="d-flex align-items-center">Aplicación Web</span>
       </ToggleButton>
     </ButtonGroup>
   );
