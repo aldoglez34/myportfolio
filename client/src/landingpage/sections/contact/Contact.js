@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Formik, ErrorMessage } from "formik";
 import * as yup from "yup";
 import { Form, Button, Row, Col, Spinner } from "react-bootstrap";
-import ProjectType from "./components/ProjectType";
+import TypeSelector from "./components/TypeSelector";
 import Fade from "react-reveal/Fade";
 import Subtitle from "../../../components/subtitle/Subtitle";
 import API from "../../../utils/API";
@@ -20,11 +20,11 @@ const Contact = () => {
       .string()
       .email("Formato de email incorrecto")
       .required("Requerido"),
-    // type: yup.string().required("Requerido"),
+    type: yup.string().required("Requerido"),
     description: yup.string().required("Requerido"),
   });
 
-  const [type, setType] = useState("");
+  // const [type, setType] = useState("");
 
   return (
     <Fade>
@@ -40,24 +40,27 @@ const Contact = () => {
               name: "",
               email: "",
               description: "",
+              type: "",
             }}
-            validationSchema={yupschema}
+            // validationSchema={yupschema}
             onSubmit={(values, { setSubmitting }) => {
-              setSubmitting(true);
-              values.type = type;
-              API.sendEmail(values)
-                .then((res) => {
-                  console.log(res);
-                  alert(res.data);
-                  setSubmitting(false);
-                })
-                .catch((err) => {
-                  console.log(err);
-                  alert(
-                    "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
-                  );
-                  setSubmitting(false);
-                });
+              // setSubmitting(true);
+              setSubmitting(false);
+              console.log("values", values);
+              // values.type = type;
+              // API.sendEmail(values)
+              //   .then((res) => {
+              //     console.log(res);
+              //     alert(res.data);
+              //     setSubmitting(false);
+              //   })
+              //   .catch((err) => {
+              //     console.log(err);
+              //     alert(
+              //       "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
+              //     );
+              //     setSubmitting(false);
+              //   });
             }}
           >
             {({
@@ -115,11 +118,18 @@ const Contact = () => {
                   </Form.Group>
                 </Form.Row>
                 {/* type */}
-                <ProjectType
-                  value={type}
-                  types={["Publicidad", "Tienda en línea", "Aplicación web"]}
-                  handleChange={setType}
-                />
+                <Form.Row>
+                  <Form.Group as={Col}>
+                    <Form.Label>Tipo de proyecto</Form.Label>
+                    <br />
+                    <TypeSelector value={values.type} onChange={handleChange} />
+                    <ErrorMessage
+                      className="text-danger"
+                      name="type"
+                      component="div"
+                    />
+                  </Form.Group>
+                </Form.Row>
                 {/* description */}
                 <Form.Row>
                   <Form.Group as={Col}>

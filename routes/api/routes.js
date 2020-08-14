@@ -17,8 +17,8 @@ router.post("/sendEmail", async function (req, res) {
 
   // build message
   const { email, name, type, description } = req.body;
-  const remitente =
-    "<strong>Remitente: </strong><span>" + clientEmail + "</span>";
+
+  const remitente = "<strong>Remitente: </strong><span>" + email + "</span>";
   const nombreCliente = "<strong>Nombre: </strong><span>" + name + "</span>";
   const tipo = "<strong>Tipo: </strong><span>" + type + "</span>";
   const descripción =
@@ -26,7 +26,7 @@ router.post("/sendEmail", async function (req, res) {
 
   // send email
   await transporter.sendMail({
-    from: clientEmail,
+    from: email,
     to: "aldoglez34@gmail.com",
     subject: "aldosolano.com -- " + type + " -- " + name,
     html:
