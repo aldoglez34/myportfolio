@@ -56,6 +56,7 @@ const Contact = () => {
                   alert(
                     "Ocurrió un error al enviar tu mensaje, por favor inténtalo más tarde."
                   );
+                  setSubmitting(false);
                 });
             }}
           >
