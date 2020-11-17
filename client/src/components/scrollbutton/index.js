@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
-import "./scrollbutton.scss";
+import styles from "./scrollbutton.module.scss";
 import Fade from "react-reveal/Fade";
 
 class ScrollButton extends PureComponent {
@@ -50,7 +50,9 @@ class ScrollButton extends PureComponent {
           onClick={() => {
             this.scrollToTop();
           }}
-          className="scroll d-flex align-items-center justify-content-center"
+          className={
+            styles.scroll + " d-flex align-items-center justify-content-center"
+          }
           title="Ir arriba"
         >
           <i className="fas fa-chevron-up" />
